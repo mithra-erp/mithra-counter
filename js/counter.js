@@ -5,6 +5,7 @@ function onScanSuccess(decodedText, decodedResult) {
     if (decodedText !== lastResult) {
         ++countResults;
         lastResult = decodedText;
+        alert(lastResult);
         // Handle on success condition with the decoded message.
         console.log(`Scan result ${decodedText}`, decodedResult);
         resultContainer.innerHTML += `<p>${decodedText}</p>`;
